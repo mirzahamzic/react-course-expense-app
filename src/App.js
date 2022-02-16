@@ -7,9 +7,14 @@ function App() {
     { id: "2", title: "Kruske", amount: 50, date: new Date(2021, 8, 15) },
     { id: "3", title: "Narandze", amount: 82, date: new Date(2021, 10, 14) },
   ];
+
+  const onSubmit = (expense) => {
+    console.log(expense);
+  };
+
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={onSubmit} />
       <Expenses items={expenses} />
     </div>
   );
