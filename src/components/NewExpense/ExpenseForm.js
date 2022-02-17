@@ -32,7 +32,7 @@ const ExpenseForm = ({ onSubmit, onShowForm }) => {
     e.preventDefault();
     const expenseData = {
       title,
-      amount,
+      amount: +amount,
       date: new Date(date),
     };
     onSubmit(expenseData);
