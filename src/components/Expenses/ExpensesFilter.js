@@ -3,9 +3,11 @@ import React from "react";
 import "./ExpensesFilter.css";
 
 const ExpensesFilter = ({ onChangeFilter, selected }) => {
+
   const onChange = (e) => {
     onChangeFilter(e.target.value);
   };
+  
   return (
     <div className="expenses-filter">
       <div className="expenses-filter__control">

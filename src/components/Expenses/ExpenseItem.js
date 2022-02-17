@@ -6,10 +6,10 @@ import "./ExpenseItem.css";
 const ExpenseItem = ({ item }) => {
   const [title, setTitle] = useState(item.title);
 
-  const clickHandler = () => {
-    setTitle("Updated!");
-    console.log(title);
-  };
+  // const clickHandler = () => {
+  //   setTitle("Updated!");
+  //   console.log(title);
+  // };
   return (
     <Card className="expense-item">
       <ExpenseDate date={item.date} />
@@ -17,7 +17,7 @@ const ExpenseItem = ({ item }) => {
         <h2>{title}</h2>
         <div className="expense-item__price">${item.amount}</div>
       </div>
-      <button onClick={clickHandler}>Click ME</button>
+      {/* <button onClick={clickHandler}>Click ME</button> */}
     </Card>
   );
 };
